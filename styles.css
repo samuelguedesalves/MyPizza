@@ -110,18 +110,19 @@ main .container-wrapper section.item {
 main .container-wrapper section.item:last-child {
   margin-bottom: 0;
 }
-main .container-wrapper section.item .item-content {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2.4rem;
-}
-main .container-wrapper section.item .item-content img {
+main .container-wrapper section.item img {
   width: 36rem;
   height: 36rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  border-radius: 1.2rem;
+}
+main .container-wrapper section.item .item-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
 }
 main .container-wrapper section.item .item-content h2 {
   font-size: 4rem;
@@ -144,4 +145,59 @@ main .container-wrapper section.item .item-content button {
   height: fit-content;
   padding: 1.3rem 6rem;
   border: 0;
+  border-radius: 1.2rem;
+}
+main .container-wrapper .contact-form h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--color-text-heading);
+  margin-bottom: 1.6rem;
+}
+main .container-wrapper .contact-form .contact-form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+main .container-wrapper .contact-form .contact-form-wrapper img {
+  width: 40rem;
+}
+main .container-wrapper .contact-form form {
+  width: 100%;
+}
+main .container-wrapper .contact-form form .input-control:not(:last-child) {
+  margin-bottom: 2rem;
+}
+main .container-wrapper .contact-form form .input-control label {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+main .container-wrapper .contact-form form .input-control input {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  padding-inline: 1.2rem;
+  font-size: 1.8rem;
+  background: var(--color-white);
+  border: solid 0.1rem var(--color-text-paragraph);
+  border-radius: 0.8rem;
+}
+main .container-wrapper .contact-form form .input-control select {
+  width: 100%;
+  height: 5rem;
+  font-size: 1.8rem;
+  padding-inline: 1rem;
+  background: var(--color-white);
+  border: solid 0.1rem var(--color-text-paragraph);
+  border-radius: 0.8rem;
+}
+main .container-wrapper .contact-form form button {
+  height: 5rem;
+  padding-inline: 4rem;
+  font-size: 2rem;
+  background: var(--color-red);
+  border: 0;
+  color: var(--color-white);
+  border-radius: 0.8rem;
 }/*# sourceMappingURL=styles.css.map */

@@ -119,17 +119,19 @@ main {
             margin-bottom: 0;
         }
 
+        & img {
+            width: 36rem;
+            height: 36rem;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 1.2rem;
+        }
+
         & .item-content {
             display: flex;
             flex-direction: column;
             row-gap: 2.4rem;
 
-            & img {
-                width: 36rem;
-                height: 36rem;
-                object-fit: cover;
-                object-position: center;
-            }
 
             & h2 {
                 font-size: 4rem;
@@ -150,7 +152,79 @@ main {
                 height: fit-content;
                 padding: 1.3rem 6rem;
                 border: 0;
+                border-radius: 1.2rem;
             }
         }
+    }
+
+    & .container-wrapper .contact-form {
+        h2 {
+            font-size: 4rem;
+            font-weight: bold;
+            color: var(--color-text-heading);
+            margin-bottom: 1.6rem;
+        }
+
+        .contact-form-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+
+            img {
+                width: 40rem;
+            }
+        }
+
+        form {
+            width: 100%;
+
+            .input-control {
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+
+                label {
+                    display: block;
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                input {
+                    display: block;
+                    width: 100%;
+                    height: 5rem;
+                    padding-inline: 1.2rem;
+                    font-size: 1.8rem;
+                    background: var(--color-white);
+                    border: solid 0.1rem var(--color-text-paragraph);
+                    border-radius: 0.8rem;
+
+
+                }
+
+                select {
+                    width: 100%;
+                    height: 5rem;
+                    font-size: 1.8rem;
+                    padding-inline: 1rem;
+                    background: var(--color-white);
+                    border: solid 0.1rem var(--color-text-paragraph);
+                    border-radius: 0.8rem;
+                }
+            }
+
+            button {
+                height: 5rem;
+                padding-inline: 4rem;
+                font-size: 2rem;
+                background: var(--color-red);
+                border: 0;
+                color: var(--color-white);
+                border-radius: 0.8rem;
+            }
+        }
+
+
     }
 }
