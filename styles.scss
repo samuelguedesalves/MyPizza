@@ -228,3 +228,17 @@ main {
 
     }
 }
+
+footer .container-wrapper {
+    padding-block: 2rem;
+    display: flex;
+    justify-content: center;
+
+    p {
+        font-size: 2rem;
+
+        & span {
+            font-weight: bold;
+        }
+    }
+}

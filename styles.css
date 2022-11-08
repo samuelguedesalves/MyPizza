@@ -200,4 +200,16 @@ main .container-wrapper .contact-form form button {
   border: 0;
   color: var(--color-white);
   border-radius: 0.8rem;
+}
+
+footer .container-wrapper {
+  padding-block: 2rem;
+  display: flex;
+  justify-content: center;
+}
+footer .container-wrapper p {
+  font-size: 2rem;
+}
+footer .container-wrapper p span {
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */
